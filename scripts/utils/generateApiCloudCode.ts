@@ -1,14 +1,12 @@
 import { Endpoint } from '../types/Endpoint';
 import fs from 'fs';
 
-type Module = 'EvmApi' | 'SolApi';
+type Module = 'EvmApi';
 
 const getModulePrefix = (module: Module) => {
   switch (module) {
     case 'EvmApi':
       return '';
-    case 'SolApi':
-      return 'sol-';
     default:
       throw new Error(`No prefix defined for module '${module}'`);
   }

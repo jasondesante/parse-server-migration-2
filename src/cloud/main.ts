@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 declare const Parse: any;
 import './generated/evmApi';
-import './generated/solApi';
 import { requestMessage } from '../auth/authService';
 
 Parse.Cloud.define('requestMessage', async ({ params }: any) => {
