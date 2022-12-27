@@ -38,11 +38,12 @@ export default cleanEnv(process.env, {
   }),
   RATE_LIMIT_TTL: num({
     desc: 'Rate limit window in seconds',
-    default: 30,
+    default: 200,
   }),
   RATE_LIMIT_AUTHENTICATED: num({
     desc: 'Rate limit requests per window for authenticated users',
-    default: 50,
+    // default: 50,
+    default: 200,
   }),
   RATE_LIMIT_ANONYMOUS: num({
     desc: 'Rate limit requests per window for anonymous users',
