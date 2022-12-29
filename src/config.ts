@@ -29,7 +29,8 @@ export default cleanEnv(process.env, {
   }),
   SERVER_URL: str({
     desc: 'Referenece to your server URL. Replace this when your app is hosted',
-    devDefault: 'http://localhost:1337/server',
+    devDefault: 'http://localhost:3000/',
+    default: 'http://localhost:3000/',
   }),
 
   REDIS_CONNECTION_STRING: str({
@@ -42,7 +43,6 @@ export default cleanEnv(process.env, {
   }),
   RATE_LIMIT_AUTHENTICATED: num({
     desc: 'Rate limit requests per window for authenticated users',
-    // default: 50,
     default: 500,
   }),
   RATE_LIMIT_ANONYMOUS: num({
