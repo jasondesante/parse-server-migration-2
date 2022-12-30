@@ -7,7 +7,7 @@ export default cleanEnv(process.env, {
   MORALIS_API_KEY: str({
     desc: 'Your moralis Api key (keep this secret)',
   }),
-
+  
   PORT: num({
     desc: 'Default port wher parse-server will run on',
     default: 1337,
