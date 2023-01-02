@@ -9,7 +9,7 @@ export interface RequestMessage {
 const DOMAIN = 'ApeTapes.xyz';
 const STATEMENT = 'Please sign this message to log in to Ape Tapes.';
 const URI = 'https://apetapes.xyz';
-const EXPIRATION_TIME = '2023-01-01T00:00:00.000Z';
+const EXPIRATION_TIME = '2033-01-01T00:00:00.000Z';
 const TIMEOUT = 15;
 
 export async function requestMessage({
